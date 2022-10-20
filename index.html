@@ -7,9 +7,60 @@
     <title>Document</title>
     <link rel="stylesheet" href="/style/style.css">
     <script src="/script/app.js" defer></script>
+    <script src="https://kit.fontawesome.com/e649c2e0a4.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
+    <div id="box">
+        <h1>Confira o clima de uma cidade:</h1>
+
+        <div id="search">
+            <input type="text">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+
+        <div class="informations hide">
+
+            <div class="title">
+                <h2>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span id="city"></span>
+                    <img src="https://countryflagsapi.com/png/br" alt="chosen country" id="country">
+                </h2>
+            </div>
+
+
+            <div id="temperature">
+                <p> 
+                    <span></span>
+                    °C
+                </p>
+            </div>
+
+            <div id="day">
+                <span></span>
+                <img src="https://openweathermap.org/img/wn/01d.png" alt="DayNigth" id="dayNigth">
+            </div>
+
+            <div id="conditions">
+                <p id="humidity">
+                    <span></span>
+                    <i class="fa-solid fa-droplet"></i>
+                </p>
+                <p id="wind">
+                    <span></span>
+                    <i class="fa-solid fa-wind"></i>
+                </p>
+            </div>
+          
+        </div>
+        <div id="error" class="hide">
+            <h2>cidade não encontrada</h2>
+        </div>
+
+
+    </div>
     
 </body>
 </html>
